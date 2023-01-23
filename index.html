@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador | Alura - ONE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./assets/images/Logo.png" alt="Logo Alura" class="logo">
+    </header>
+    <main class="container">
+        <section class="section-input">
+            <textarea class="text-area" cols="20" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="info">⚠️ Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="buttons">
+                <button class="btn-encrypt" onclick="btn_Encrypt()">Encriptar</button>
+                <button class="btn-Decrypt" onclick="btn_Decrypt()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section-output">
+            <textarea class="message" cols="20" rows="10"></textarea>
+            <div class="buttons-output">
+                <button class="btn btn-copy" onclick="copy()">Copiar</button>
+                <button class="btn btn-listen" onclick="listen()">Escuchar</button>
+                <button class="btn btn-reset" onclick="cleanInputs()">Reset</button>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
